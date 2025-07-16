@@ -1,0 +1,46 @@
+{
+  "author": "Kenny",
+  "bugs": {
+    "url": "https://github.com/celo-org/celo-composer/issues"
+  },
+  "description": "Custom Celo Composer project.",
+  "homepage": "https://github.com/celo-org/celo-composer/blob/main/README.md",
+  "keywords": [
+    "celo-composer",
+    "celo"
+  ],
+  "license": "MIT",
+  "name": "save-sphere",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/celo-org/celo-composer.git"
+  },
+  "resolutions": {
+    "@wagmi/connectors": "5.7.7",
+    "@wagmi/core": "2.16.7",
+    "@walletconnect/utils": "^2.19.1",
+    "elliptic": "6.6.1",
+    "viem": "2.23.2",
+    "wagmi": "2.14.11"
+  },
+  "scripts": {
+    "react-app:dev": "yarn workspace @save-sphere/react-app dev",
+    "react-app:build": "yarn workspace @save-sphere/react-app build",
+    "react-app:start": "yarn workspace @save-sphere/react-app start",
+    "react-app:lint": "yarn workspace @save-sphere/react-app lint",
+    "hardhat:postinstall": "yarn workspace @save-sphere/hardhat postinstall",
+    "hardhat:compile": "yarn workspace @save-sphere/hardhat compile",
+    "hardhat:tsc": "yarn workspace @save-sphere/hardhat tsc",
+    "hardhat:build": "yarn workspace @save-sphere/hardhat build",
+    "hardhat:clean": "yarn workspace @save-sphere/hardhat clean",
+    "hardhat:run:node": "yarn workspace @save-sphere/hardhat run:node",
+    "hardhat:test": "yarn workspace @save-sphere/hardhat test",
+    "hardhat:prettier": "yarn workspace @save-sphere/hardhat prettier",
+    "hardhat:sync:abis": "yarn workspace @save-sphere/hardhat sync:abis"
+  },
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ]
+}

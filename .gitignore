@@ -37,6 +37,7 @@ nb-configuration.xml
 *.log
 *.pyc
 *.swp
+*.gitignore
 
 PROPOSAL.md
 package-lock.json

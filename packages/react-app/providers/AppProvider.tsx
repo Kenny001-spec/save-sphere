@@ -3,10 +3,7 @@
 import '@rainbow-me/rainbowkit/styles.css';
 
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import {
-  RainbowKitProvider,
-  connectorsForWallets,
-} from '@rainbow-me/rainbowkit';
+import {RainbowKitProvider, connectorsForWallets} from '@rainbow-me/rainbowkit';
 import { WagmiProvider, createConfig, http } from 'wagmi';
 import { celo, celoAlfajores } from 'wagmi/chains';
 
@@ -38,6 +35,7 @@ const config = createConfig({
 const queryClient = new QueryClient();
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
+
   return (
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
